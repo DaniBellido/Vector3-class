@@ -3,13 +3,15 @@
 int main() 
 {
 	Vector3 a;
-	Vector3 b(10, 10, 10);
+	Vector3 b(10.0, 10.0, 10.0);
 	Vector3 c(b);
 	Vector3 d = b + c;
 
-	a.GetPosition();
-	b.GetPosition();
-	c.GetPosition();
-	d.GetPosition();
+	d.Normalize();
+	d.DistanceTo(b);
+	d.DotProduct(b);
+	d.CrossProduct(b);
+	d.AngleBetween(b);
+
 
 }
